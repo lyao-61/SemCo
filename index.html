@@ -74,7 +74,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>SemCo</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -241,21 +241,23 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">SemCo: Toward Semantic Coherent Visual Relationship Forecasting</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yangjun Ou</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yao Liu</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Li Mi</a><sup>#</sup>
                   </span>
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhenzhong Chen</a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Wuhan Textil University<br>ETH Zurich</span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
@@ -264,7 +266,7 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2107.01181" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -280,13 +282,13 @@
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Dataset</span>
                     </a>
                   </span>
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/lyao-61/SemCoFormer" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -297,7 +299,7 @@
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2107.01181" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -314,24 +316,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -341,7 +325,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Visual Relationship Forecasting (VRF) in video aims to anticipate relations among objects without observing future visual content. The task relies on capturing and modeling the semantic coherence in object interactions, as it underpins the evolution of events and scenes in videos. However, existing VRF datasets offer limited support for learning such coherence due to noisy annotations in the datasets and weak correlations between different actions and relationship transitions in subject-object pair. Furthermore, existing methods struggle to distinguish similar relationships and overfit to unchanging relationships in consecutive frames. To address these challenges, we present SemCoBench, a benchmark that emphasizes semantic coherence for visual relationship forecasting in video. Based on action labels and short-term subject-object pairs, SemCoBench decomposes relationship categories and dynamics by cleaning and reorganizing video datasets to ensure predicting semantic coherence in object interactions. In addition, we also present Semantic Coherent Transformer method (SemCoFormer) to model the semantic coherence with a Relationship Augmented Module (RAM) and a Coherence Reasoning Module (CRM). RAM is designed to distinguish similar relationships, and CRM facilitates the model's focus on the dynamics in relationships. The experimental results on SemCoBench demonstrate that modeling the semantic coherence is a key step toward reasonable, fine-grained, and diverse visual relationship forecasting, contributing to a more comprehensive understanding of video scenes.
           </p>
         </div>
       </div>
